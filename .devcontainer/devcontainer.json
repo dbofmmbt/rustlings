@@ -2,8 +2,6 @@
   "image": "mcr.microsoft.com/devcontainers/rust:1-1-bullseye",
   "waitFor": "onCreateCommand",
   "onCreateCommand": ".devcontainer/setup.sh",
-  "updateContentCommand": "cargo build",
-  "postCreateCommand": "",
   "postAttachCommand": {
     "server": "rustlings watch"
   },
@@ -12,7 +10,8 @@
       "extensions": [
         "rust-lang.rust-analyzer",
         "vadimcn.vscode-lldb",
-				"tamasfe.even-better-toml"
+				"tamasfe.even-better-toml",
+        "intellsmi.comment-translate"
       ]
     }
   }
